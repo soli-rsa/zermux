@@ -145,9 +145,7 @@ main() {
 
     # starship config
     cat <<'EOF' > ~/.config/starship.toml
-add_newline = false
-
-# add_newline = true
+add_newline = true
 command_timeout = 200
 format = "[$directory$git_branch$git_status]($style)$character"
 
@@ -193,7 +191,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_STATE_HOME="$HOME/.local/state"
 #
 export TERMINFO=/data/data/com.termux/files/usr/share/terminfo
-export EDITOR=hx
+export EDITOR=editor
 export LS_COLORS="$(vivid generate tokyonight-night)"
 export PAGER=bat
 export PATH="$HOME/.local/bin:$HOME/go/bin:$HOME/.cargo/bin:$HOME/.termux/bin:$PATH"
